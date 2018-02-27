@@ -1,0 +1,11 @@
+/*
+  query editor for some reasons is not showing up
+  this fixes it
+  Found at https://github.com/graphql/graphiql/issues/170 
+*/
+.graphiql-container .query-editor {
+  -webkit-flex: 1;
+  flex: 1;
+  position: relative;
+  height: 300px;
+}
