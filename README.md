@@ -3,7 +3,12 @@ GraphQL client demo for Stripe API.
 * We use official [Swagger 2.0](https://github.com/stripe/openapi/raw/master/openapi/spec2.json) spec of Stripe API with some minor changes. We removed some array fields since [swagger-to-graphql](https://github.com/yarax/swagger-to-graphql) does not process them correctly.
 * We build a GraphQL client using [apollo-link-swagger](https://github.com/mstn/apollo-link-swagger).
 * The apollo link is used by GraphiQL to introspect the schema and process GraphQL queries.
-* Demo runs [here]( http://mstn.github.io/apollo-link-swagger-stripe) (open Network tab to see the actual http request).
+
+To run the demo
+* yarn instal
+* yarn start
+* open http://localhost:3000
+* open Network tab to see the actual http request.
 
 We are able to browser "Stripe" GraphQL documentation and queries are formed correctly.
 However, the response will be always 401 error since the API key is missing.
